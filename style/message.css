@@ -1,0 +1,12 @@
+.message_container {
+    width: 90%;
+    height: auto;
+    background-color: rgb(56, 55, 55);
+    padding: 10px;
+}
+
+.user_name {
+    display: flex;
+    justify-content: start;
+
+}

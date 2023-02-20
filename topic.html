@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>La Chance (forum) </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/topics.css">
+    <script src="https://kit.fontawesome.com/112ff1547b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="banniere">
+        <header>
+            <a href="forum.html">
+                <div class="header_div">
+                    <img class="logo" src="img/My project-1.png" alt="">
+                </div>
+            </a>
+        </header>
+    </div>
+    <main>
+        <nav>
+            <div class="btn_forum"> Forum </div>
+            <div class="btn_header">
+                <a href="inscription.html">
+                    <button class="btn_inscription">S'inscrire</button>
+                </a>
+                <a href="connexion.html">
+                    <button class="btn_connexion">Connexion</button>
+                </a>
+            </div>
+        </nav>
+
+        <section class="topic_top">
+            <p>Sujet : </p>
+            <h1 class="title"></h1>
+        </section>
+
+        <div class="topic_container">
+            <section class="content_topic">
+                <div class="user_topic_info">
+                    <div class="info_user">
+                        <h3 class="pseudo_auteur_topic"></h3>
+                        <p class="date_topic"></p>
+                    </div>
+                </div>
+                <div class="ligne"></div>
+                <p class="content_texte">
+                </p>
+            </section>
+            <div class="commentContainerMain"></div>
+            <div class="topic_comment_container">
+                <div class="textarea_container">
+                    <h3>Votre réponse :</h3>
+                    <textarea class="reponse" name="" id="" cols="30" rows="10"></textarea>
+                    <button class="send_comment">Envoyez</button>
+                </div>
+                <emoji-picker style="height: 250px;"></emoji-picker>
+            </div>
+            <script type="module" src="https://cdn.skypack.dev/emoji-picker-element"></script>
+            <script type="module">
+                document.addEventListener('DOMContentLoaded', () => {
+                    const picker = document.querySelector('emoji-picker');
+                    const textarea = document.querySelector('textarea');
+                    picker.addEventListener('emoji-click', (event) => {
+                        textarea.value += event.detail.unicode;
+                    });
+                });
+            </script>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>Tous droits réservés &copy; 2023 La Chance</p>
+    </footer>
+    <script src="/js/topic.js"></script>
+</body>
+
+</html>

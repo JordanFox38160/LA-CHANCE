@@ -1,0 +1,47 @@
+.message_private_container {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_message_private_container {
+    color: white;
+    width: 100%;
+    background-color: #202020;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.title_message_private_container h2 {
+    margin: 0px;
+    padding: 10px;
+}
+
+.input_message {
+    padding: 0PX;
+    width: 99%;
+    height: 220px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.send_message {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    background: rgb(30, 131, 240);
+    background: linear-gradient(90deg, rgba(30, 131, 240, 1) 0%, rgba(24, 236, 240, 1) 35%, rgba(255, 113, 240, 1) 100%);
+    margin-top: 20px;
+}

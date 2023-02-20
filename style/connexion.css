@@ -1,0 +1,15 @@
+.message_for_create_account {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.message_for_create_account p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.message_for_create_account a {
+    font-size: 20px
+}

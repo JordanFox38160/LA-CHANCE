@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>La Chance (forum) </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/112ff1547b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<div class="banniere">
+    <header>
+        <a href="forum.html">
+            <div class="header_div">
+                <img class="logo" src="img/My project-1.png" alt="">
+            </div>
+        </a>
+    </header>
+</div>
+
+<body>
+    <main>
+        <nav>
+            <div class="btn_forum"> Forum </div>
+            <div class="btn_header">
+                <a href="inscription.html">
+                    <button class="btn_inscription">S'inscrire</button>
+                </a>
+                <a href="connexion.html">
+                    <button class="btn_connexion">Connexion</button>
+                </a>
+            </div>
+        </nav>
+        <div class="button_pseudo_container">
+            <div class="btn_top_container">
+                <a href="#make_topic_and_risibank"><button class="btn_top">Nouveau sujet</button></a>
+                <button class="btn_top" onClick="window.location.reload();">Actualiser</button>
+            </div>
+        </div>
+
+        <section class="forum">
+            <section class="section_topic">
+                <div class="topic_nav">
+                    <h3>Sujet</h3>
+                    <div class="info_topic_nav">
+                        <h3>Auteur :</h3>
+                        <h3>Messages :</h3>
+                    </div>
+                </div>
+                <section class="topic_message">
+
+                </section>
+            </section>
+            <section class="forum_info">
+                <div class="user_info_connected">
+                    <h3>Membres connectée : </h3>
+                    <p>10</p>
+                </div>
+                <div class="moderator_info">
+                    <h3>Modérateur du forum :</h3>
+                    <p class="moderator_name">LeRenard, Lamloz, Thom</p>
+                    <p class="contact">Contacter un modérateurs</p>
+                </div>
+            </section>
+        </section>
+        <section id="make_topic_and_risibank" class="make_topic_and_risibank">
+            <div class="make_topic">
+                <div class="titre_make_topic">
+                    <h2>Titre :</h2>
+                    <input class="input_make_topic" type="text">
+                </div>
+
+                <div class="container_make_topic">
+                    <div class="text_make_topic">
+                        <h2>Votre message :</h2>
+                        <textarea class="message_container" style="resize: none" , name="content_topic" id="" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <emoji-picker style="height: 280px;"></emoji-picker>
+                    <script type="module" src="https://cdn.skypack.dev/emoji-picker-element"></script>
+                    <script type="module">
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const picker = document.querySelector('emoji-picker');
+                            const textarea = document.querySelector('textarea');
+                            picker.addEventListener('emoji-click', (event) => {
+                                textarea.value += event.detail.unicode;
+                            });
+                        });
+                    </script>
+                </div>
+                <button class="btn_post">Envoyez</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Tous droits réservés &copy; 2023 La Chance</p>
+    </footer>
+    <script src="js/forum.js"></script>
+</body>
+
+</html>
