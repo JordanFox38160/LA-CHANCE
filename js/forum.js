@@ -74,6 +74,15 @@ if (userId === null) {
 
     forum_info.appendChild(no_connected_text)
 } else {
+
+    const forum_info = document.querySelector('.forum_info')
+
+    const no_connected_text = document.createElement('h3')
+    no_connected_text.innerText = 'Connecter :'
+    no_connected_text.style.color = '#32CD32'
+    no_connected_text.style.cursor = 'pointer'
+    forum_info.appendChild(no_connected_text)
+
     fetch('http://localhost:4000/' + userId)
         .then(response => {
             const response_data = response.json()
